@@ -24,5 +24,25 @@ namespace PasswordManager
         {
             InitializeComponent();
         }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+                DragMove();
+        }
+
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            LoggedInWindow liw = new LoggedInWindow();
+            this.Close();
+            liw.Show();
+        }
+
+        private void RegisterButton_Click(object sender, RoutedEventArgs e)
+        {
+            RegistrationWindow rw = new RegistrationWindow();
+            this.Close();
+            rw.Show();
+        }
     }
 }
