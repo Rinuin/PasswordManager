@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +23,14 @@ namespace PasswordManager
         public RegistrationWindow()
         {
             InitializeComponent();
+        }
+
+        private void FinishButton_Click(object sender, RoutedEventArgs e)
+        {
+            Trace.WriteLine(usernameBox.Text.ToString());
+            Trace.WriteLine(passwordBoxFirst.Password.ToString());
+            Trace.WriteLine(passwordBoxSecond.Password.ToString());
+            Trace.WriteLine(emailBox.Text.ToString());
         }
     }
 }
