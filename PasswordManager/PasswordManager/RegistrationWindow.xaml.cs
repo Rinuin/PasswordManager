@@ -31,6 +31,10 @@ namespace PasswordManager
             Trace.WriteLine(passwordBoxFirst.Password.ToString());
             Trace.WriteLine(passwordBoxSecond.Password.ToString());
             Trace.WriteLine(emailBox.Text.ToString());
+
+            MainWindow mw = new MainWindow();
+            this.Close();
+            mw.Show();
         }
     }
 }
