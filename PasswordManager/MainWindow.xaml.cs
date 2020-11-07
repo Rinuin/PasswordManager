@@ -24,5 +24,25 @@ namespace PasswordManager
         {
             InitializeComponent();
         }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+                DragMove();
+        }
+
+        private void LoginCommand_CanExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = true;
+        }
+
+        private void LoginCommand_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            //System.Windows.Application.Current.Shutdown();
+            if (MessageBox.Show("Do you want to close application?", "Exit", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            {
+                Application.Current.Shutdown();
+            }
+        }
     }
 }

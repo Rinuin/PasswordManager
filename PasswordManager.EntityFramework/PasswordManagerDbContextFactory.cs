@@ -6,7 +6,7 @@ using System.Text;
 
 namespace PasswordManager.EntityFramework
 {
-    class PasswordManagerDbContextFactory : IDesignTimeDbContextFactory<PasswordManagerDbContext>
+    public class PasswordManagerDbContextFactory : IDesignTimeDbContextFactory<PasswordManagerDbContext>
     {
         public PasswordManagerDbContext CreateDbContext(string[] args = null)
         {
