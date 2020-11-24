@@ -24,11 +24,11 @@
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter Property="Background" Value="White"/>
-                <Setter Property="Opacity" Value="0.4"/>
-                <Setter Property="Foreground" Value="DeepSkyBlue"/>
+                <Setter Property="Opacity" Value="0.3"/>
+                <Setter Property="Foreground" Value="DarkCyan"/>
             </Trigger>
         </Style.Triggers>
-
+        
     </Style>
-
+    
 </ResourceDictionary>

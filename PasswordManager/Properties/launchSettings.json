@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PasswordManager": {
+      "commandName": "Project",
+      "workingDirectory": "D:\\.NET projext copy\\PasswordManager\\PasswordManager"
+    }
+  }
+}
